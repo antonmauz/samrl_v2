@@ -1,0 +1,18 @@
+Version 0.5
+2020/02/18
+Half Cheetah, having only positions and not velocities as observation
+
+Version 0.4
+2020/02/13
+Ant Cripple Env
+
+Version 0.3
+2020/02/12
+Ant with in episode friction change
+
+Version 0.2
+2020/02/11
+Respawn env everytime "set_task"
+
+Version 0.1
+2020/02/06

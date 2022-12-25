@@ -1,0 +1,41 @@
+from setuptools import setup, find_packages
+
+setup(name="meta_rand_envs",
+      version='0.1',
+      description='Environments with random physical parameters of agents and changing environental properties, using gym 0.15.4 and mujoco-py 1.50.1.68 for Mujoco 1.5',
+      url='https://github.com/LerchD/meta_rand_envs',
+      author='David Lerch',
+      author_email='david.lerch@tum.de',
+      license='MIT',
+      packages=find_packages(),
+      install_requires=[
+        'requests>=2.0',
+        'six',
+        'scipy',
+        'PyOpenGL>=3.1.0',
+        'nose>=1.3.7',
+        'pyglet>=1.2.0,<=1.3.2',
+        'cloudpickle~=1.2.0',
+        'enum34~=1.1.6;python_version<"3.4"',
+        'opencv-python',
+        'glfw>=1.4.0',
+        'numpy==1.16.1',
+        'Cython>=0.27.2',
+        'imageio>=2.1.2',
+        'cffi>=1.10',
+        'lockfile>=0.12.2',
+        'gym==0.15.4',
+        'mujoco-py==1.50.1.68'
+      ],
+      package_data={'meta_rand_envs.gym': [
+        'envs/mujoco/assets/*.xml',
+        'envs/mujoco/assets/meshes/*',
+        'envs/classic_control/assets/*.png',
+        'envs/robotics/assets/LICENSE.md',
+        'envs/robotics/assets/fetch/*.xml',
+        'envs/robotics/assets/hand/*.xml',
+        'envs/robotics/assets/stls/fetch/*.stl',
+        'envs/robotics/assets/stls/hand/*.stl',
+        'envs/robotics/assets/textures/*.png']
+      },
+      zip_safe=False)
